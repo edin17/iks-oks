@@ -1,0 +1,401 @@
+html {
+  width: 100%;
+}
+
+.App {
+  overflow: hidden;
+  background-color: #f0e3d4;
+  width: 100vw;
+}
+
+.App .galery {
+  position: fixed;
+  width: 95vw;
+  height: 100vh;
+  background-color: #f0e3d4;
+  z-index: 16;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  overflow: scroll;
+}
+
+.App .galery .bigphoto {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  margin: 0;
+  z-index: 17;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .galery .bigphoto img {
+  width: 100%;
+  max-height: 100%;
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.App .galery svg {
+  position: absolute;
+  right: 10px;
+  font-size: 30pt;
+}
+
+.App .galery img {
+  width: 99%;
+  height: 99%;
+  margin-top: 1%;
+}
+
+.App header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #744202;
+}
+
+.App header h1 {
+  font-family: "Tangerine";
+  font-size: 50pt;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 5vh;
+  color: #744202;
+  cursor: pointer;
+}
+
+.App header div {
+  -ms-flex-item-align: center;
+      align-self: center;
+  cursor: pointer;
+  color: white;
+  background: url("texturewood1.jpg");
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid yellow;
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 15% 50%, 0% 0%);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 15% 50%, 0% 0%);
+  width: 150px;
+  height: 40px;
+}
+
+.App header div b {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Tangerine";
+  font-size: 24pt;
+}
+
+.App header button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: url("texturewood1.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 1px solid yellow;
+}
+
+.App header button svg {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.App .image-container {
+  border: 5px solid #744202;
+  height: 65vh;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+}
+
+.App .image-container img {
+  height: 63.7vh;
+  cursor: pointer;
+}
+
+.App .benefits {
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10vh;
+}
+
+.App .benefits div {
+  text-align: center;
+}
+
+.App .benefits div div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: url("texturewood1.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 1px solid yellow;
+}
+
+.App .benefits div div svg {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.App .services {
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  background: url("texturewood1.jpg");
+  background-size: 50%;
+  margin-top: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+
+.App .services ul {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+}
+
+.App .contact {
+  position: absolute;
+  right: 0;
+  margin-right: 20%;
+  width: 25vw;
+  height: 100px;
+  background-color: #f0e3d4;
+  z-index: 1;
+  border-radius: 20px;
+  border: 1px solid #744202;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16pt;
+}
+
+.App .contact svg {
+  margin-top: 20px;
+}
+
+.App .open-photo {
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  background-color: white;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  border-radius: 20px;
+  border: 1px solid #744202;
+}
+
+.App .open-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.App .open-photo svg {
+  position: absolute;
+  right: 0.5vw;
+  font-size: 32pt;
+}
+
+.App .other-info {
+  width: 100vw;
+  height: 20.3vh;
+  margin-top: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("texturewood1.jpg");
+  background-size: 30%;
+  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+
+.App .other-info .image-space {
+  width: 45%;
+  height: 100%;
+  background-size: contain;
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.App .other-info .text-space {
+  width: 70%;
+  height: 20vh;
+  background: url("texturewood1.jpg");
+  margin-left: 25%;
+  background-size: 30%;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
+          clip-path: polygon(100% 0, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
+  position: absolute;
+  overflow: scroll;
+  color: white;
+  overflow-x: hidden;
+}
+
+.App .other-info .text-space h2 {
+  margin-left: 12%;
+}
+
+.App .other-info .text-space p {
+  width: 90%;
+  font-size: 12pt;
+  margin-left: 12%;
+  background-color: rgba(128, 128, 128, 0.274);
+  z-index: 1;
+}
+
+.App .other-info .text-space::-webkit-scrollbar {
+  display: none;
+}
+
+.App .footer {
+  width: 100vw;
+  height: 30vh;
+  background: url(#f0e3d4);
+  border-top: 2px solid #744202;
+  margin-top: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #744202;
+}
+
+.App .footer a {
+  color: #744202;
+  font-size: 28pt;
+  font-family: "Tangerine";
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .App header {
+    height: 10vh;
+  }
+  .App header h1 {
+    font-size: 24pt;
+    margin: 0;
+  }
+  .App header div {
+    width: 15%;
+    height: 5vh;
+  }
+  .App header div b {
+    font-size: 12pt;
+  }
+  .App header button {
+    width: 30px;
+    height: 30px;
+  }
+  .App .image-container {
+    border: none;
+  }
+  .App .contact {
+    margin: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .App .image-container {
+    width: 100vw;
+    height: 45vh;
+  }
+  .App .image-container img {
+    height: 48.7vh;
+  }
+  .App .image-container .carousel-inner div div {
+    padding: 0px;
+  }
+  .App .image-container .carousel-inner div div p {
+    font-size: 12px;
+  }
+  .App .image-container .carousel-inner div div h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .App .image-container ol {
+    bottom: -30px;
+  }
+  .App .open-photo {
+    width: 100vw;
+    height: 60vh;
+    margin: 0;
+    margin-top: 15vh;
+  }
+  .App .other-info {
+    height: 35vh;
+  }
+  .App .other-info .text-space {
+    height: 35vh;
+  }
+  .App .other-info .text-space h2 {
+    font-size: 18pt;
+  }
+  .App .footer a {
+    font-size: 20pt;
+  }
+  .App .galery {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: scroll;
+    -ms-grid-columns: (minmax(80px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    -ms-grid-rows: (minmax(20px, 0.5fr))[auto-fit];
+        grid-template-rows: repeat(auto-fit, minmax(20px, 0.5fr));
+  }
+  .App .galery img {
+    height: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
