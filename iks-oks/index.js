@@ -6,7 +6,7 @@ let gameArr = [
 let symbol="X";
 
 function restartGame(){
-    window.location="file:///C:/Users/PC/OneDrive/Desktop/React/iks-oks/index.html";
+    window.location="https://cranky-liskov-85df44.netlify.app/";
 }
 let moves=0;
 function checkWinner(){
@@ -22,7 +22,7 @@ function checkWinner(){
     }
     moves++;
     if(moves===9){
-        winnerText.innerHTML="Tie";
+        winnerText.innerHTML="Draw";
         winnerText.style.backgroundColor="orange";
         restartBtn.style.display="block";
         
