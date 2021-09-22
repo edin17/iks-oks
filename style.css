@@ -1,0 +1,42 @@
+.board{
+    width: 50vh;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+    margin-top: 25vh;
+    border: 1px solid black;
+}
+h1{
+    font-size:40px ;
+}
+.board .field{
+    border: 1px solid gray;
+    text-align: center;
+
+}
+
+.board .field h3{
+    font-size: 80px;
+    margin:0;
+    height: 80%;
+    margin-top: 20%;
+    
+}
+#winner{
+    color: white;
+    background-color: green;
+    width: 50vh;
+    margin: auto;
+    text-align: center;
+}
+#restart{
+    display: none;
+    border: 1px solid gray;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 50vh;
+    height: 50px;
+    font-size: 42px;
+}
