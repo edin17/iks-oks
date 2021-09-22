@@ -8,14 +8,17 @@
     margin-top: 25vh;
     border: 1px solid black;
 }
+h1{
+    font-size:40px ;
+}
 .board .field{
     border: 1px solid gray;
     text-align: center;
 
 }
 
-.board .field h5{
-    font-size: 48px;
+.board .field h3{
+    font-size: 80px;
     margin:0;
     height: 80%;
     margin-top: 20%;
@@ -24,7 +27,7 @@
 #winner{
     color: white;
     background-color: green;
-    width: 400px;
+    width: 50vh;
     margin: auto;
     text-align: center;
 }
@@ -33,6 +36,7 @@
     border: 1px solid gray;
     margin: 0 auto;
     margin-top: 40px;
-    width: 200px;
-    height: 36px;
+    width: 50vh;
+    height: 50px;
+    font-size: 42px;
 }
